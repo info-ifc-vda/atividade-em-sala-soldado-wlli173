@@ -5,7 +5,7 @@ class Soldado {
     private String nome;
     private String patente;
     private int posicao;
-    private final int movimentar;
+    private final int movimentar = 1;
     private static int qtdSoldados;
 
     public Soldado (String nome){
@@ -13,7 +13,6 @@ class Soldado {
         this.posicao = 0;
         patente = "Soldado";
         qtdSoldados++;
-        movimentar = 1;
     }
 
     public Soldado (String nome, String patente){
@@ -21,7 +20,6 @@ class Soldado {
         this.posicao = 0;
         this.patente = patente;
         qtdSoldados++;
-        movimentar = 1;
     }
 
     public void movimentar(int qtd){
